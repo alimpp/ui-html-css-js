@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Photographer UI</title>
 </head>
 <body>
@@ -29,11 +33,10 @@
             </div>
             
             <div class="nav-links">
-              <a href="">Github</a>
-              <a href="">Stackoverflow</a>
-              <a href="">LinkedIn</a>
-              <a href="">Codepen</a>
-              <a href="">JsFiddle</a>
+              <a href="">Home</a>
+              <a onclick="goToServices()">Services</a>
+              <a onclick="goToProtfolio()">Protfolio</a>
+              <a onclick="goToContact()">Contact Us</a>
             </div>
         </div>
 
@@ -44,10 +47,79 @@
             <p class="lorem white_color">
                 In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design
             </p>
-            <button class="btn_white">Get Started</button>
+            <button onclick="goToServices()" class="btn_white">Get Started</button>
         </div>
 
        </div>
+
+       <div class="services">
+         <div class="services_glass">
+             <h3 class="white_color">Services</h3>
+             <hr>
+             <div class="text_box">
+                <h4 data-aos="zoom-in-right" class="white_color" style="margin: 10px 0px;">Lorem ipsum may be used as a placeholder</h4>
+                <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">1.In publishing and graphic design</span>
+                <span class="white_color text_services" data-aos="flip-right">2.commonly used to demonstrate the visual form</span>
+                <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">3. is available. It is also used to temporarily</span>
+                <span class="white_color text_services" data-aos="flip-right">4.ebpage or publication, without the meaning</span>
+                <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">5.ebpage or publication, without the meaning</span>
+                <span class="white_color text_services" data-aos="flip-right">6.Versions of the Lorem ipsum text have been</span>
+                <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">7.when it was popularized by advertisements</span>
+                <span class="white_color text_services" data-aos="flip-right">8.Lorem ipsum was introduced to the digital </span>
+                <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">9. in graphic and word-processing templates for its</span>
+                <div style="display: flex;" data-aos="zoom-in-up">
+                    <button class="btn_gold">Protfolio</button>
+                    <button onclick="goToContact()" class="btn_white" style="margin-left: 5px;">Contact Us</button>
+                </div>
+             </div>
+         </div>
+       </div>
+
+       <div class="portfolio">
+            <div class="portfolio_glass" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="left">
+
+                   <h3 class="white_color" style="padding: 10px 0px;">Portfolio Company</h3>
+                   <hr>
+                   <p class="lorem white_color">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design
+                   </p>
+                   <h3 class="white_color" style="padding: 10px 0px;">Work Experience</h3>
+                   <hr>
+                   <p class="lorem white_color">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design
+                   </p>
+
+                   <div style="display: flex;" data-aos="zoom-in-up">
+                    <button class="btn_white" onclick="goToContact()">Contact Us</button>
+                   </div>
+
+                </div>
+                <div class="right">
+                    <img src="./img/5.jpg" alt="error" class="img">
+                </div>
+            </div>
+       </div>
+
+       <div class="contact">
+        <h3 class="white_color">Contact Us</h3>
+        <hr>
+        <div class="contac_box">
+            <div class="contac_left">
+                <h5 class="white_color" style="padding: 10px 0px;">Send Message</h5>
+                <input class="inp" type="text" placeholder="Your Name">
+                <input class="inp" type="text" placeholder="Your Email">
+                <textarea class="textarea" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <button class="btn_blue">Submit</button>
+            </div>
+            <div class="contac_right">
+
+            </div>
+        </div>
+       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 </html
