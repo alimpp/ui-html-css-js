@@ -28,52 +28,24 @@ body{font-family: sans-serif; }
     border: 1px solid #fafafa;
 }
 
-.btn_gold {background-image: linear-gradient(to right, #FF4E50 0%, #F9D423  51%, #FF4E50  100%)}
-.btn_gold {
+.btn_border {
    margin: 10px 0px;
    width: 120px;
    height: 33px;
    text-align: center;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: #303030;            
+   transition: 0.7s;
+   background: none;
+   color: #fff;            
    border-radius: 5px;
    display: block;
-   border: none;
+   border: 1px solid #fff;
    cursor: pointer;
  }
 
- .btn_gold:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
-   box-shadow: 0 0 20px #ffa700;
+ .btn_border:hover {
+   background: #fafafa;
+   color: #303030
  }
-
- 
- .btn_blue {background-image: linear-gradient(to right, #f4c4f3 0%, #fc67fa  51%, #f4c4f3  100%)}
- .btn_blue {
-    margin: 10px 0px;
-    width: 120px;
-    height: 33px;
-    border: none;
-    text-align: center;
-    color: #303030;
-    transition: 0.5s;
-    background-size: 200% auto;            
-    border-radius: 5px;
-    display: block;
-    cursor: pointer;
-  }
-
-  .btn_blue:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0 0 20px #eee;
-  }
- 
-
 
 @keyframes type {
     0%{width: 0px; border-right: 3px solid;}
