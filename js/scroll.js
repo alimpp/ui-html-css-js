@@ -1,11 +1,16 @@
+const goToHome = () => {
+    const home = document.querySelector('.home_data')
+    home.scrollIntoView()
+}
+
 const goToServices = () => {
     const services = document.querySelector('.services')
     services.scrollIntoView()
 }
 
-const goToProtfolio = () => {
-    const protfolio = document.querySelector('.portfolio')
-    protfolio.scrollIntoView()
+const goToGallery = () => {
+    const gallery = document.querySelector('.gallery')
+    gallery.scrollIntoView()
 }
 
 const goToContact = () => {

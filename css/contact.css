@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 20px;
 }
 .inp{
     height: 35px;
@@ -49,4 +50,16 @@
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
     margin: 10px 0px;
+}
+
+@media (max-width:800px) {
+    .contac_box{
+        flex-direction: column;
+    }
+    .contac_left{
+        width: 100%;
+    }
+    .contac_right{
+        width: 100%;
+    }
 }

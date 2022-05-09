@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/services.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Photographer UI</title>
@@ -35,7 +35,7 @@
             <div class="nav-links">
               <a href="">Home</a>
               <a onclick="goToServices()">Services</a>
-              <a onclick="goToProtfolio()">Protfolio</a>
+              <a onclick="goToGallery()">Gallery</a>
               <a onclick="goToContact()">Contact Us</a>
             </div>
         </div>
@@ -68,38 +68,39 @@
                 <span class="white_color text_services" data-aos="flip-right">8.Lorem ipsum was introduced to the digital </span>
                 <span class="white_color text_services" data-aos="flip-left" data-aos="flip-right">9. in graphic and word-processing templates for its</span>
                 <div style="display: flex;" data-aos="zoom-in-up">
-                    <button class="btn_border">Protfolio</button>
+                    <button class="btn_border" onclick="goToGallery()">Gallery</button>
                     <button onclick="goToContact()" class="btn_white" style="margin-left: 5px;">Contact Us</button>
                 </div>
              </div>
          </div>
        </div>
+       
+         <div class="gallery">
+             <div class="gallery_glass" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="gallery_left">
 
-       <div class="portfolio">
-            <div class="portfolio_glass" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="left">
+                      <h3 class="white_color" style="padding: 10px 0px;">Gallery</h3>
+                      <hr>
+                      <p class="white_color" style="padding-top: 10px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex temporibus natus placeat ratione, fugit quasi, dolorum ad eaque pariatur quibusdam qui doloribus eius optio. Corporis ad illum eligendi eveniet.
+                      </p>
+                      
+                      <h3 class="white_color" style="padding: 10px 0px;">Work Experience</h3>
+                      <hr>
+                      <p class="white_color" style="padding-top: 10px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex temporibus natus placeat ratione, fugit quasi, dolorum ad eaque pariatur quibusdam qui doloribus eius optio. Corporis ad illum eligendi eveniet.
+                      </p>
 
-                   <h3 class="white_color" style="padding: 10px 0px;">Portfolio Company</h3>
-                   <hr>
-                   <p class="lorem white_color">
-                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design
-                   </p>
-                   <h3 class="white_color" style="padding: 10px 0px;">Work Experience</h3>
-                   <hr>
-                   <p class="lorem white_color">
-                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design
-                   </p>
+                      <div style="display: flex;">
+                        <button class="btn_border" onclick="goToHome()">Home</button>
+                        <button onclick="goToServices()" class="btn_white" style="margin-left: 5px;">Services</button>
+                      </div>
 
-                   <div style="display: flex;" data-aos="zoom-in-up">
-                    <button class="btn_white" onclick="goToContact()">Contact Us</button>
-                   </div>
+                    </div>
 
-                </div>
-                <div class="right">
-                    <img src="./img/5.jpg" alt="error" class="img">
-                </div>
-            </div>
-       </div>
+                    <div class="glass_right"></div>
+             </div>
+         </div>
 
        <div class="contact">
         <h3 class="white_color">Contact Us</h3>
@@ -111,9 +112,15 @@
                 <input class="inp" type="text" placeholder="Your Email">
                 <textarea class="textarea" placeholder="Your Message" cols="30" rows="10"></textarea>
                 <button class="btn_border">Submit</button>
+                <button onclick="goToHome()">Home</button>
             </div>
             <div class="contac_right">
-
+                   <h4 class="white_color" style="font-weight: 100; padding: 10px 0px;">Email : photoUi@gmail.com</h4>
+                   <hr>
+                   <h4 class="white_color" style="font-weight: 100; padding: 10px 0px;">Phone Number : +56 3256 325 33</h4>
+                   <hr>
+                   <h4 class="white_color" style="font-weight: 100; padding: 10px 0px;">Location : USA , California</h4>
+                   <hr>
             </div>
         </div>
        </div>
