@@ -11,6 +11,27 @@ body{font-family: sans-serif; }
 .white_color{color: #fafafa;}
 .main_bg{background-color: #112B3C;}
 
+.footer{
+    width: 100%;
+    height: 50px;
+    direction: rtl;
+}
+
+.shift{
+    color: #fafafa;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 50%;
+    animation: 3s shift infinite;
+}
+
+@keyframes shift {
+    0%{color: #fafafa;}
+    50%{color: yellow;}
+    100%{color: #fafafa;}
+}
+
 .btn_white{
     width: 120px;
     height: 33px;
@@ -57,3 +78,10 @@ body{font-family: sans-serif; }
     100%{opacity: 1;}
 }
 
+
+.icon{
+    color: #fafafa;
+    font-size: 22px; 
+    padding: 20px 5px;
+    cursor: pointer;
+}
