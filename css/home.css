@@ -18,6 +18,7 @@
 .lorem{
     padding-top: 10px;
     font-size: 12px;
+    font-weight: 100;
     animation: 3s opacity;
 }
 
